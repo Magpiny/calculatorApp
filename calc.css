@@ -1,0 +1,624 @@
+@media only screen and (max-width: 599px) {
+    body {
+        background: linear-gradient(to bottom left, aliceblue 50%, blueviolet 50%);
+    }
+
+    .container {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .message {
+        margin-right: auto;
+        transform: rotate(180deg);
+        writing-mode: vertical-lr;
+        text-align: center;
+        color: blueviolet;
+        font-size: medium;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        box-shadow: -3px -3px 6px #fff,
+            3px 3px 6px rgba(0, 0, 0, 0.4);
+        padding: .2rem;
+        border-radius: 1.0rem;
+    }
+
+    .calculator {
+        background-color: whitesmoke;
+        width: 100vw;
+        height: 100vh;
+        padding-top: 20px;
+        border-radius: 1.2rem;
+        box-shadow: -3px -3px 6px #fff,
+            3px 3px 6px rgba(0, 0, 0, 0.4);
+        position: relative;
+    }
+
+    .screen {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-row-gap: 0.2rem;
+        background-color: aliceblue;
+        border-radius: 1.2rem;
+        box-shadow: -3px -3px 6px #fff,
+            3px 3px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    .display-operations {
+        margin-left: auto;
+        font-weight: bold;
+        font-size: large;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 0.4rem;
+    }
+
+    .display-answer {
+        margin-left: auto;
+        font-size: large;
+        font-style: normal;
+        color: blue;
+        padding: 0.4rem;
+    }
+
+    .upper-buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 0.5rem;
+        border-radius: 1.2rem;
+        gap: 0.1rem;
+    }
+
+
+
+    .lower-buttons {
+        display: grid;
+        grid-template-columns: 0.2fr 3.4fr 3.4fr;
+        gap: 0.2rem;
+        padding: 0.5rem;
+        border-radius: 1.2rem;
+    }
+
+    .lower-left-buttons {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 0.2rem;
+
+    }
+
+    .lower-right-buttons {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 0.3rem;
+    }
+
+    button {
+        font-size: 1rem;
+        background-color: white;
+        border: none;
+        padding: 0.3rem;
+        border-radius: 1.2rem;
+        cursor: pointer;
+        box-shadow: -3px -3px 6px #fff,
+            3px 3px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    button:hover,
+    button:active {
+        background-color: #ccc;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        padding-bottom: 7vh;
+        padding-left: 1vw;
+    }
+
+    button:active {
+        box-shadow: inset -3px -3px 6px #fff,
+            inset 3px 3px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    /* blank page */
+    .blank-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .banner {
+        width: 90vw;
+        background-color: azure;
+        padding: .3rem;
+    }
+
+    .sorry-image {
+        border-radius: 1rem;
+    }
+
+    .blank-words {
+        width: 90vw;
+        background-color: azure;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        padding: .3rem;
+        font-size: large;
+        font-weight: 600;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-stretch: expanded;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        background: linear-gradient(to bottom right, aliceblue 50%, blueviolet 50%);
+    }
+
+    .container {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .message {
+        margin-right: auto;
+        transform: rotate(180deg);
+        writing-mode: vertical-lr;
+        text-align: center;
+        color: blueviolet;
+        font-size: medium;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        box-shadow: -3px -3px 6px #fff,
+            3px 3px 6px rgba(0, 0, 0, 0.4);
+        padding: .2rem;
+        border-radius: 1.0rem;
+    }
+
+    .calculator {
+        background-color: whitesmoke;
+        width: 80vw;
+        height: fit-content;
+
+        padding-top: 20px;
+        border-radius: 1.2rem;
+        box-shadow: -3px -3px 6px #fff,
+            3px 3px 6px rgba(0, 0, 0, 0.4);
+        position: relative;
+    }
+
+    .screen {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-row-gap: 0.2rem;
+        background-color: aliceblue;
+        border-radius: 1.2rem;
+        box-shadow: -3px -3px 6px #fff,
+            3px 3px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    .display-operations {
+        margin-left: auto;
+        font-weight: bold;
+        font-size: large;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 0.4rem;
+    }
+
+    .display-answer {
+        margin-left: auto;
+        font-size: large;
+        font-style: normal;
+        color: blue;
+        padding: 0.4rem;
+    }
+
+    .upper-buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 0.5rem;
+        border-radius: 1.2rem;
+        gap: 0.1rem;
+    }
+
+
+
+    .lower-buttons {
+        display: grid;
+        grid-template-columns: 0.2fr 3.4fr 3.4fr;
+        gap: 0.2rem;
+        padding: 0.5rem;
+        border-radius: 1.2rem;
+    }
+
+    .lower-left-buttons {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 0.2rem;
+
+    }
+
+    .lower-right-buttons {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 0.3rem;
+    }
+
+    button {
+        font-size: 1rem;
+        background-color: white;
+        border: none;
+        padding: 0.3rem;
+        border-radius: 1.2rem;
+        cursor: pointer;
+        box-shadow: -3px -3px 6px #fff,
+            3px 3px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    button:hover,
+    button:active {
+        background-color: #ccc;
+    }
+
+    footer {
+        display: none;
+    }
+
+    button:active {
+        box-shadow: inset -3px -3px 6px #fff,
+            inset 3px 3px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    /* blank page */
+    .blank-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .banner {
+        width: 90vw;
+        background-color: azure;
+        padding: .3rem;
+    }
+
+    .sorry-image {
+        border-radius: 1rem;
+    }
+
+    .blank-words {
+        width: 90vw;
+        background-color: azure;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        padding: .3rem;
+        font-size: large;
+        font-weight: 600;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-stretch: expanded;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background: linear-gradient(to bottom left, aliceblue 50%, blueviolet 50%);
+    }
+
+    .container {
+
+        margin: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .message {
+        margin-right: auto;
+        transform: rotate(180deg);
+        writing-mode: vertical-lr;
+        text-align: center;
+        color: blueviolet;
+        font-size: large;
+        font-weight: bolder;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        box-shadow: -6px -6px 9px #fff,
+            6px 6px 9px rgba(0, 0, 0, 0.4);
+        padding: .6rem;
+        border-radius: 1.8rem;
+    }
+
+    .calculator {
+
+        background-color: whitesmoke;
+        width: 90vw;
+        height: max-content;
+
+        padding-top: 20px;
+        border-radius: 2rem;
+        padding: 1rem;
+        box-shadow: -6px -6px 9px #fff,
+            6px 6px 9px rgba(0, 0, 0, 0.4);
+        position: relative;
+    }
+
+    .screen {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-row-gap: 0.6rem;
+        background-color: aliceblue;
+        padding: 1rem;
+        border-radius: 1.8rem;
+        box-shadow: -6px -6px 9px #fff,
+            6px 6px 9px rgba(0, 0, 0, 0.4);
+    }
+
+    .display-operations {
+        margin-left: auto;
+        font-weight: bold;
+        font-size: larger;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
+    .display-answer {
+        margin-left: auto;
+        font-size: x-large;
+        font-style: normal;
+        color: blue;
+    }
+
+    .upper-buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 1rem;
+        border-radius: 1.4rem;
+        gap: 0.3rem;
+        background: conic-gradient(from 45deg, red, blueviolet 50%, yellow 85%, green);
+    }
+
+
+
+    .lower-buttons {
+        display: grid;
+        grid-template-columns: 0.2fr 3.4fr 3.4fr;
+        gap: 0.3rem;
+        padding: 1rem;
+        border-radius: 1.2rem;
+        background: conic-gradient(at 0% 30%, red 10%, yellow 30%, #1e90ff 50%);
+    }
+
+    .lower-left-buttons {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 0.3rem;
+
+    }
+
+    .lower-right-buttons {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 0.3rem;
+
+    }
+
+    button {
+        font-size: 1.2rem;
+        background-color: white;
+        border: none;
+        padding: 0.1rem;
+        border-radius: 1.2rem;
+        cursor: pointer;
+        box-shadow: -6px -6px 9px #fff,
+            6px 6px 9px rgba(0, 0, 0, 0.4);
+    }
+
+    button:hover,
+    button:active {
+        background-color: #ccc;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        padding-bottom: 8vh;
+        padding-left: 1vw;
+    }
+
+    button:active {
+        box-shadow: inset -6px -6px 9px #fff,
+            inset 6px 6px 9px rgba(0, 0, 0, 0.4);
+    }
+
+    /* blank page */
+    .blank-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .banner {
+        width: 50vw;
+        background-color: azure;
+        padding: .6rem;
+    }
+
+    .sorry-image {
+        border-radius: 2rem;
+    }
+
+    .blank-words {
+        width: 50vw;
+        background-color: azure;
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        padding: .6rem;
+        font-size: x-large;
+        font-weight: 900;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-stretch: extra-expanded;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    body {
+        background: linear-gradient(to bottom left, aliceblue 50%, blueviolet 50%);
+    }
+
+    .container {
+
+        margin: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .message {
+        margin-right: auto;
+        transform: rotate(180deg);
+        writing-mode: vertical-lr;
+        text-align: center;
+        color: blueviolet;
+        font-size: large;
+        font-weight: bolder;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        box-shadow: -6px -6px 9px #fff,
+            6px 6px 9px rgba(0, 0, 0, 0.4);
+        padding: .6rem;
+        border-radius: 1.8rem;
+    }
+
+    .calculator {
+        margin: auto;
+        background-color: whitesmoke;
+        width: 40vw;
+        height: 100vh;
+        padding-top: 20px;
+        border-radius: 2rem;
+        padding: 1rem;
+        box-shadow: -6px -6px 9px #fff,
+            6px 6px 9px rgba(0, 0, 0, 0.4);
+        position: relative;
+    }
+
+    .screen {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-row-gap: 0.6rem;
+        background-color: aliceblue;
+        padding: 1rem;
+        border-radius: 1.8rem;
+        box-shadow: -6px -6px 9px #fff,
+            6px 6px 9px rgba(0, 0, 0, 0.4);
+    }
+
+    .display-operations {
+        margin-left: auto;
+        font-weight: bold;
+        font-size: larger;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
+    .display-answer {
+        margin-left: auto;
+        font-size: x-large;
+        font-style: normal;
+        color: blue;
+    }
+
+    .upper-buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        padding: 1rem;
+        border-radius: 1.8rem;
+        gap: 0.5rem;
+    }
+
+
+
+    .lower-buttons {
+        display: grid;
+        grid-template-columns: 0.2fr 3.4fr 3.4fr;
+        gap: 0.5rem;
+        padding: 1rem;
+        border-radius: 1.8rem;
+    }
+
+    .lower-left-buttons {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 0.5rem;
+
+    }
+
+    .lower-right-buttons {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 0.5rem;
+    }
+
+    button {
+        font-size: 1.7rem;
+        background-color: white;
+        border: none;
+        padding: 0.3rem;
+        border-radius: 1.8rem;
+        cursor: pointer;
+        box-shadow: -6px -6px 9px #fff,
+            6px 6px 9px rgba(0, 0, 0, 0.4);
+    }
+
+    button:hover,
+    button:active {
+        background-color: #ccc;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        padding-bottom: 10vh;
+        padding-left: 1vw;
+    }
+
+    button:active {
+        box-shadow: inset -6px -6px 9px #fff,
+            inset 6px 6px 9px rgba(0, 0, 0, 0.4);
+    }
+
+    /* blank page */
+    .blank-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .banner {
+        width: 21vw;
+        background-color: azure;
+        padding: .6rem;
+    }
+
+    .sorry-image {
+        border-radius: 2rem;
+    }
+
+    .blank-words {
+        width: 21vw;
+        background-color: azure;
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        padding: .6rem;
+        font-size: x-large;
+        font-weight: 900;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-stretch: extra-expanded;
+    }
+
+}
