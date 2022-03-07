@@ -516,7 +516,8 @@
             6px 6px 9px rgba(0, 0, 0, 0.4);
     }
 
-    .display-operations {
+    .display-operations,
+    .display-operations1 {
         margin-left: auto;
         font-weight: bold;
         font-size: larger;

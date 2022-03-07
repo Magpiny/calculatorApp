@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator::web</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./jQuery.js"></script>
+    
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
     <link type="text/css" rel="stylesheet" href="./calc.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
@@ -13,8 +20,9 @@
         
         <div class="calculator">
             <div class="screen">
-                <div class="display-operations">5+5</div>
-                <div class="display-answer">10</div>
+                <div class="display-operations">0</div>
+                <div class="display-operations1"></div>
+                <div class="display-answer" >0</div>
 
             </div>
             <div class="buttons">
@@ -29,21 +37,21 @@
                     <button id="sin">sin</button>
                     <button id="tan">tan</button>
                     <button id="cos">cos</button>
-                    <button id="absolute">DEG&deg;</button>
-                    <button id="absolute">rad</button>
+                    <button id="deg">DEG&deg;</button>
+                    <button id="rad">rad</button>
                     <button id="cube">x&sup3;</button>
 
                     <button id="sine-inverse">sin<sup>-1</sup></button>
                     <button id="tan-inverse">tan<sup>-1</sup></button>
                     <button id="cos-inverse">cos<sup>-1</sup></button>
                     
-                    <button id="absolute">x!</button>
-                    <button id="absolute">e<sup>x</sup></button>
+                    <button id="factorial">x!</button>
+                    <button id="exponent">e<sup>x</sup></button>
                     <button id="power">&and;</button>
 
                     <button id="exit-application" >OFF</button>
-                    <button id="absolute">nCr</button>
-                    <button id="absolute">nPr</button>
+                    <button id="combination">nCr</button>
+                    <button id="permutation">nPr</button>
                     <button id="convert-to-fraction" title="convert to fraction">d/c</button>
                     <button id="close-brackets">(</button>
                     <button id="open-brackets">)</button>
@@ -52,36 +60,36 @@
                 <!-- Lower buttons -->
                 <div class="lower-buttons">
                     <p class="message">Scientific calculator by Magpiny</p>
-                    <div class="lower-left-buttons">
-                    
-                    <button id="seven">7</button>
-                    <button id="eight">8</button>
-                    <button id="nine">9</button>
-                    
-                    <button id="four">4</button>
-                    <button id="five">5</button>
-                    <button id="six">6</button>
+                        <div class="lower-left-buttons">
+                        
+                            <button id="numkey">7</button>
+                            <button id="numkey">8</button>
+                            <button id="numkey">9</button>
+                            
+                            <button id="numkey">4</button>
+                            <button id="numkey">5</button>
+                            <button id="numkey">6</button>
 
-                    <button id="one">1</button>
-                    <button id="two">2</button>
-                    <button id="three">3</button>
+                            <button id="numkey">1</button>
+                            <button id="numkey">2</button>
+                            <button id="numkey">3</button>
 
-                    <button id="zero">0</button>
-                    <button id="plus-or-minus">+/-</button>
-                    <button id="point">.</button>
-                    <button id="exp">&exponentiale;</button>
-                </div>
-                <div class="lower-right-buttons">
-                    <button id="delete">DEL</button>
-                    <button id="clear">CLR</button>
-                    <button id="mult">&#215;</button>
-                    <button id="division">&#247;</button>
-                    <button id="plus">&#43;</button>
-                    <button id="minus">&#8722;</button>
-                    <button id="percent">&#37;</button>
-                    <button id="equals">&equals;</button>
-                    <button id="pi">&pi;</button>
-                </div>
+                            <button id="numkey">0</button>
+                            <button id="plus-or-minus">+/-</button>
+                            <button id="point">.</button>
+                            <button id="exp">&exponentiale;</button>
+                        </div>
+                        <div class="lower-right-buttons">
+                            <button id="delete">DEL</button>
+                            <button id="clear">CLR</button>
+                            <button id="mult">&#215;</button>
+                            <button id="division">&#247;</button>
+                            <button id="plus">&#43;</button>
+                            <button id="minus">&#8722;</button>
+                            <button id="percent">&#37;</button>
+                            <button id="equals">&equals;</button>
+                            <button id="pi">&pi;</button>
+                        </div>
                 </div>
             </div>
 
